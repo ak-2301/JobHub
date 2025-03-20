@@ -13,14 +13,20 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="text-white text-xl font-bold">
-            <Link href="/home">NoteScanner</Link>
+            <Link href="/">JobHub</Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Link href="/home" className="text-white">
-              Home
+          <Link href="/admin/jobs" className="text-white">
+              Go to Admin
             </Link>
-            <Link href="/about" className="text-white">
-              About
+          <Link href="/create-resume" className="text-white">
+              Create Resume
+            </Link>
+            <Link href="/jobs" className="text-white">
+              Jobs
+            </Link>
+            <Link href="/ats" className="text-white">
+              ATS Score
             </Link>
             <Link href="/login" className="text-white">
               Login
@@ -48,13 +54,13 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <div className="md:hidden space-y-2">
-            <Link href="/home" className="block text-white ">
-              Home
+            <Link href="/jobs" className="text-white">
+              Jobs
             </Link>
-            <Link href="/about" className="block text-white ">
-              About
+            <Link href="/ats" className="text-white">
+              ATS Score
             </Link>
-            <Link href="/login" className="block text-white ">
+            <Link href="/login" className="text-white">
               Login
             </Link>
           </div>
